@@ -20,7 +20,7 @@ $CustID = $GatewayFQDN.SubString(0,9) + ".csv"
 $FilePath = "$env:APPDATA\$CustID"
 
 # Get the results of the search
-$results1 = Get-CsOnlineUser | Where-Object { $_.LineURI } | Select-Object LineUri
+$results1 = Get-CsOnlineUser | Where-Object { $_.LineURI } | Select-Object LineUri, TeamsUpgradeEffectiveMode 
 
 #Export the results of the search to a CSV file, or inform the user if it fails
 try {
