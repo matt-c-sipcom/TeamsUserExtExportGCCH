@@ -1,4 +1,4 @@
-﻿# Connect to Microsoft Teams
+#Connect to Microsoft Teams
 Connect-MicrosoftTeams
 
 #Get CustomerID from PSTN gateway to identify customer
